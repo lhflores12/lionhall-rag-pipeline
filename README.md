@@ -93,3 +93,5 @@ This is not a claim of being an AI engineer or a software developer. It's eviden
 ## Next steps
 
 This architecture is a template, not a one-off. The natural next version replaces the in-memory vector store with a persistent one, adds basic authentication in front of the n8n interface if broader access is ever needed, and could be rebuilt on AWS directly (EC2 plus a private VPC) as a second, platform-specific version of the same project once that becomes useful to demonstrate.
+## Notes
+First Git/GitHub rep completed Oct 1, 2026.
