@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Verify README exists and isn't empty
+        run: |
+          if [ ! -s README.md ]; then
+            echo "README.md is missing or empty"
+            exit 1
+          fi
+          echo "README.md present and non-empty"
